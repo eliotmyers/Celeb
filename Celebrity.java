@@ -7,7 +7,21 @@ public class Celebrity{
         String height;
         String profession;
         int age;
-        boolean aliveOrDead;
+        boolean alive;
+
+        public static void main(String[] args){
+                Them();
+
+                Scanner scan = new Scanner(System.in);
+                int num = (int) Math.random()^9;
+                System.out.println("Enter A Guess");
+                String guess = scan.nextLine();
+        
+                for(int i = 0; i<Celebrities.length(); i++){
+                        System.out.println("Guess the celebrity");
+                        
+                }
+        }
 
     
         public Celebrity( String sex, String haircolor, String height, String profession, int age, boolean alive){
@@ -23,8 +37,11 @@ public class Celebrity{
                 Celebrity RyanTannehill = new Celebrity("male", "brown", "Six Foor Four", "TV Host", 34, true);
                 Celebrity RyanReynolds = new Celebrity("male", "brown", "Six Foot Two", "Actor", 46, true);
                 
-                ArrayList<String> Celebrities = new ArrayList<>();
+                ArrayList<String> Celebrities = new ArrayList<>(JaMorant, ZionWilliamson, KobeBryant, JCole, TaylorSwift, SteveHarvey, OprahWinfrey, TomBrady, RyanTannehill, RyanReynolds);
         }
+
+        
+
         public void setHeight(String height){
                 
         }
